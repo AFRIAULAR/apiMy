@@ -1,30 +1,27 @@
 module.exports = (sequelize, dataTypes) =>{
-    let alias = "Character";
+    let alias = "Serie";
     let cols = {
         image: {
             type: dataTypes.STRING,
         },
-        charName:{
+        title:{
             type: dataTypes.STRING,
             primaryKey: true,
         },
-        age: {
+        createdAt: {
+            type: dataTypes.DATE
+        },
+        ranking: {
             type: dataTypes.INTEGER
         },
-        weight: {
-            type: dataTypes.INTEGER
-        },
-        story: {
-            type: dataTypes.STRING
-        },
-        associated: {
+        associatedCharacter: {
             type: dataTypes.STRING
         },
     };
     let config = {
-        timestamps: false
+        timestamps: true
     }
 
-const Character = sequelize.define (alias, cols, config)
-return Character
+const Serie = sequelize.define (alias, cols, config)
+return Serie
 }
