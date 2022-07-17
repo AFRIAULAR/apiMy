@@ -1,4 +1,28 @@
 /*FORMULARIOS*/
+/*Register*/
+const registerForm = document.getElementById('registerFormContainer')
+const registerDelete = document.getElementById('registerDeleteBtn')
+const showRegister = document.getElementById('showRegister')
+showRegister.addEventListener("click", (e)=>{
+    e.preventDefault();
+    registerForm.classList.remove("is-hidden")
+})
+registerDelete.addEventListener("click", (e)=>{
+    e.preventDefault();
+    registerForm.classList.add("is-hidden")
+})
+/*Ingresar*/
+const loginForm = document.getElementById('loginFormContainer')
+const loginDelete = document.getElementById('loginDeleteBtn')
+const showLogin = document.getElementById('showLogin')
+showLogin.addEventListener("click", (e)=>{
+    e.preventDefault();
+    loginForm.classList.remove("is-hidden")
+})
+loginDelete.addEventListener("click", (e)=>{
+    e.preventDefault();
+    loginForm.classList.add("is-hidden")
+})
 /*Personaje*/
 const characterForm = document.getElementById('characterFormContainer')
 const characterDelete = document.getElementById('characterDeleteBtn')
