@@ -4,9 +4,94 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>HOLIS</h1>
+    <div class="container is-max-widescreen">
+        <article class="message is-primary">
+            <div class="message-header">
+            <h1 class="title is-1">Disney API</h1>
+            </div>
+            <div class="tabs is-right">
+                <ul>
+                <li><button class="button is-primary is-inverted">Register</button></li>
+                <li><button class="button is-link is-inverted">Login</button></li>
+                </ul>
+            </div>
+            <div class="message-body">
+            Bienvenidos a una <em>API</em> que nos facilita explorar el mágico mundo de <strong>Disney</strong> a través de los personajes, series y películas que lo componen. 
+            </div>
+        </article>
+        <div class="tabs is-right">
+            <button class="button is-primary is-light is-large">Personaje</button>
+            <button class="button is-primary is-light is-large">Película</button>
+            <button class="button is-primary is-light is-large">Serie</button>
+            <button class="button is-primary is-light is-large">Género</button>
+        </div>
+        <div class="container is-max-desktop">
+            <div class="notification">
+        <form method="POST">  
+        <div class="message is-primary">
+            <div class="message-header">
+            <h3 class="title is-3">Personaje</h3>
+                <button class="delete"></button>
+            </div>
+        </div>
+        <div class="file has-name">
+            <label class="file-label">
+              <input class="file-input" type="file" name="resume">
+              <span class="file-cta">
+                <span class="file-icon">
+                  <i class="fas fa-upload"></i>
+                </span>
+                <span class="file-label">
+                  Subí la imagen del personaje…
+                </span>
+              </span>
+              <span class="file-name">
+                Screen Shot 2017-07-29 at 15.54.25.png
+              </span>
+            </label>
+          </div>
+            <div class="field">
+                <label class="label">Nombre</label>
+                <div class="control">
+                <input class="input" type="text" name="charName">
+                </div>
+            </div>
+            <div class="field is-grouped">
+                <label class="label">Edad </label>
+                <div class="control">
+                <input class="input" type="number" name="age">
+                </div>
+                <label class="label">Peso</label>
+                <div class="control">
+                <input class="input" type="number" name="weight">
+                </div>
+            </div>
+            <div class="field">
+                <label class="label">Historia</label>
+                <div class="control">
+                <textarea class="textarea" name="story"></textarea>
+                </div>
+            </div>         
+          <div class="field is-grouped">
+            <div class="control">
+              <button class="button is-primary" type="submit">Agregar</button>
+            </div>
+            <div class="control">
+                <button class="button is-primary is-light" type="submit">Editar</button>
+            </div>
+            <div class="control">
+                <button class="button is-danger is-light" type="submit">Eliminar</button>
+              </div>
+            <div class="control">
+              <button class="button is-link is-light" type="reset">Cancel</button>
+            </div>
+          </div>
+        </form>
+        </div></div>
+    </div>
 </body>
 </html>
